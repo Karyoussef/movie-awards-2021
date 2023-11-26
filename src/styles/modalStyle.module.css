@@ -1,0 +1,70 @@
+.modalWrapper {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 10;
+}
+
+.highZindex {
+    z-index: 100;
+}
+
+.modalBox {
+    background-color: #333333;
+    position: relative;
+    z-index: 1000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 40px;
+    padding-top: 60px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.resultsWrapper {
+    margin-top: 30px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.resultsWrapper div {
+    margin-bottom: 10px;
+}
+
+.closeBtn {
+    text-transform: uppercase;
+    font-size: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    transition: background-color .25s ease-in-out;
+}
+
+.closeBtn:hover {
+    background-color: #848484;
+
+}

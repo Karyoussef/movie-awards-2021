@@ -1,0 +1,47 @@
+.app {
+    /* background-color: #0D2436;     */
+    height: 100%;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.appTitle {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.submitButton {
+    width: 30%;
+    margin: auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #009B86;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 26px;
+    transition: background-color .25s ease-in-out;
+}
+
+.submitButton:hover {
+    background-color: #34AC9C;
+    color: #cccccc;
+}
+
+.loaderWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+@media screen and (max-width: 768px) {
+    .submitButton {
+        width: fit-content;
+    }
+}
